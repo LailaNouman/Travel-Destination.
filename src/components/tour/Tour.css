@@ -1,0 +1,14 @@
+img {
+    width: 500px;
+    height:450px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+
+p {
+   text-align: center;
+}
