@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './components/home/Home';
-import Tour from './components/tour/Tour';
-import { Routes, Route, Link } from "react-router-dom";
+import Tour from './components/tours/Tours';
+import TourDetails from './components/tourdetails/tourdetails';
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
@@ -10,7 +11,7 @@ function App() {
    {/* <Home/> */}
    <Routes>
    <Route path="/" element={<Home />} />
-   <Route path="/tour" element={<Tour />} />
+   <Route path="/city/:id" element={<TourDetails />} />
    </Routes>
     </>
   );

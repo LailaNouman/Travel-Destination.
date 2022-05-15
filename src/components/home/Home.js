@@ -1,5 +1,6 @@
 import Header from '../header/Header';
-import Tour from '../tour/Tour';
+import Tours from '../tours/Tours';
+import Tour from '../tours/tour/Tour';
 import Footer from '../footer/Footer';
 import Navbar from '../navbar/navbar';
 import '../home/Home.css';
@@ -12,12 +13,13 @@ function Home(props){
         <div>
         <Navbar/>
         <Header/>
-        {
+        {/* {
             visited.map(most => {
                 return  (
                 <Tour name = {most.name} image = {most.image}/>
             )})
-        }
+        } */}
+        <Tour data = {visited}/>
         <Footer/>
         </div>
     );
